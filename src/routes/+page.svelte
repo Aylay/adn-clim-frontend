@@ -1,17 +1,16 @@
 <script lang="ts">
   import "../app.css";
-  
   import Logo from "$lib/components/svg/Logo.svelte";
 
   const travaux = ['Plomberie', 'Climatisation', 'Chauffage', 'Piscine']
 </script>
 
-<div class="w-full h-screen flex justify-center items-center px-[5%]">
+<div class="w-full lg:h-screen flex justify-center items-center p-[5%]">
   <div class="flex flex-col max-w-[65rem]">
-    <Logo newClass="w-full h-auto" />
+    <Logo newClass="w-full h-auto animate-fade" />
     <div class="lg:flex justify-between max-lg:grid max-lg:grid-cols-2 max-lg:gap-8 mt-8">
-      {#each travaux as travail}
-        <p class="text-blue uppercase text-4xl max-lg:odd:text-right max-lg:even:text-left">{travail}</p>
+      {#each travaux as travail, i}
+        <p class="text-blue uppercase text-4xl max-lg:text-left animate-fade" style="animation-delay: {(i + 1) * 250}ms;">{travail}</p>
       {/each}
     </div>
     <div class="my-32 flex lg:justify-between max-lg:flex-col gap-4">
@@ -22,6 +21,6 @@
         adnclim@gmail.com
       </a>
     </div>
-    <p class="text-center text-5xl">Site en construction</p>
+    <p class="lg:text-center text-5xl">Site en construction</p>
   </div>
 </div>
