@@ -8,3 +8,12 @@
 		@apply bg-white font-base text-black;
 	}
 }
+
+@layer components {
+	.btn {
+		@apply text-blue py-4 px-8 font-medium rounded-lg transition-colors duration-300 inline-block;
+	}
+	.btn.spray {
+		@apply bg-spray hover:text-white hover:bg-blue;
+	}
+}
