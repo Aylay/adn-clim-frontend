@@ -166,7 +166,7 @@
   </div>
   <div class="flex-1">
     <img
-      src="/adrien-nuvolone.jpeg"
+      src="/adrien-nuvolone.webp"
       alt="Adrien Nuvolone"
       class="rounded-lg" />
   </div>
@@ -348,18 +348,74 @@
 <section id="fournisseurs" class="max-w-screen-xl mx-auto sm:flex items-center justify-between py-32 sm:py-52 px-8 sm:px-0">
   <div>
     <h2 class="font-medium text-6xl text-blue pb-14">Nos fournisseurs</h2>
-    <div class="flex gap-12">
-      <div class="flex-1">
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-24 items-center">
+      <div class="col-span-1">
         <img
           src="/logo-atlantic.png"
           alt="Atlantic"
           class="w-full"
         >
       </div>
-      <div class="flex-1">
+      <div class="col-span-1">
         <img
-          src="/cedeo-logo2022.webp"
-          alt="CEDEO"
+          src="/geberit.png"
+          alt="Geberit"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/pacific-general.webp"
+          alt="Pacific General"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/fujitsu.png"
+          alt="Fujitsu"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/grohe.svg"
+          alt="Grohe"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/hansgrohe.svg"
+          alt="Hangsrohe"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/nicoll.svg"
+          alt="Nicoll"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/daikin.svg"
+          alt="Daikin"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/mitsubishi.svg"
+          alt="Mitshubishi"
+          class="w-full"
+        >
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/pecomark.jpg"
+          alt="Pecomark"
           class="w-full"
         >
       </div>
