@@ -341,7 +341,7 @@
 <section class="lg:h-[70rem]">
   <img
     src="/reparation_cuisine.webp"
-    alt="Lise-Laure BLAIZOT"
+    alt="Réparation cuisine"
     class="w-full lg:h-full lg:object-cover" />
 </section>
 
