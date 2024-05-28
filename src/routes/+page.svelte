@@ -3,6 +3,7 @@
   import { page } from '$app/stores';
   import { scrollto } from "svelte-scrollto"
 
+  import GTM from '$lib/components/utilities/GTM.svelte'
 	import Logo from "$lib/assets/svg/Logo.svelte";
 	import { onMount } from "svelte";
 
@@ -37,6 +38,10 @@
     <meta name="robots" contnt="noindex, nofollow">
   {/if}
 </svelte:head>
+
+{#if $page.url.host.includes('adn-clim.fr')}
+	<GTM gtmId="GTM-KKDCNLJW" />
+{/if}
 
 <section id="top" class="fixed w-full z-50 transition-colors border-2 {y >= (quiTop - headerHeight) ? 'bg-white border-spray' : 'bg-transparent border-transparent '}">
   <header class="mx-auto max-w-screen-xl py-8 flex justify-center sm:justify-between items-center px-8 sm:px-0">
