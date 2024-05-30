@@ -49,6 +49,12 @@
 	{#if $page.url.host.includes('beavers-agency')}
     <meta name="robots" contnt="noindex, nofollow">
   {/if}
+
+  <link
+    rel="preload"
+    as="image"
+    href="/amenagement_interieur_decoration_salle_bain_agreable_moderne.webp"
+  />
 </svelte:head>
 
 {#if $page.url.host.includes('adn-clim.fr')}
