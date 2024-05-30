@@ -2,6 +2,8 @@
   import "../app.css";
   import { page } from '$app/stores';
   import { scrollto } from "svelte-scrollto"
+  import { inview } from 'svelte-inview';
+  import type { ObserverEventDetails, Options } from 'svelte-inview';
 
   import GTM from '$lib/components/utilities/GTM.svelte'
 	import Logo from "$lib/assets/svg/Logo.svelte";
@@ -11,6 +13,16 @@
   let quiTop: number;
   let headerHeight: number;
   let currentDate = new Date();
+
+  let isInViewImg: boolean;
+  const optionsImg: Options = {
+    unobserveOnEnter: true,
+    rootMargin: '50px'
+  };
+
+  const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+    isInViewImg = detail.inView;
+  };
 
   onMount(() => {
     quiTop = getOffsetTop(document.getElementById('qui'))
@@ -130,12 +142,21 @@
   </header>
 </section>
 
-<section class="relative min-h-3/4-screen flex justify-center items-center">
+<section
+  class="relative min-h-3/4-screen flex justify-center items-center"
+  use:inview={optionsImg}
+  on:inview_change={handleChangeImg}
+>
   <div class="absolute top-0 left-0 w-full h-full">
+    {#if isInViewImg}
     <img
       src="/amenagement_interieur_decoration_salle_bain_agreable_moderne.webp"
       alt="Salle de bain agréable et moderne"
-      class="w-full h-full object-cover z-20" />
+      class="w-full h-full object-cover z-20 {isInViewImg
+        ? 'animate-fade'
+        : 'opacity-0'}"
+    />
+    {/if}
   </div>
   <h1 class="relative z-40 max-w-7xl text-black max-lg:px-8 text-6xl lg:text-7xl text-center font-medium leading-tight">
     <span class="text-blue">AD</span>rien <span class="text-blue">N</span>uvolone,<br />Plomberie et Climatisation dans le 06
