@@ -488,6 +488,6 @@
 
 <section class="text-center py-16 px-8 sm:px-0">
   <p class="text-xl">
-    © {currentDate.getFullYear()} Tous droits réservés par ADN CLIM - Réalisé avec amour par <a href="https://beavers-agency.fr" title="Beavers - L'agence digital média spécialiste de l'habitat" target="_blank" class="relative inline-block text-black tracking-tight before:content-[''] before:absolute before:top-full before:h-[.2rem] before:bg-blue before:block before:transition-all hover:before:w-full before:w-4 before:duration-300">Beavers, l'agence des castors</a>
+    © {currentDate.getFullYear()} Tous droits réservés par ADN CLIM - Construit avec amour par <a href="https://beavers-agency.fr" title="Beavers, l'agence digitale spécialiste en stratégie média pour les clients du secteur de l'habitat" target="_blank" rel="external" class="relative inline-block text-black tracking-tight before:content-[''] before:absolute before:top-full before:h-[.2rem] before:bg-blue before:block before:transition-all hover:before:w-full before:w-4 before:duration-300">Beavers, l'agence des 🦫</a>
   </p>
 </section>
